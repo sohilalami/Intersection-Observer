@@ -1,0 +1,54 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background: rgb(212, 116, 116);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+nav li+li {
+  border-left: 1px solid rgb(255, 255, 255);
+}
+
+nav a {
+  display: block;
+  padding: 1em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav a.geselecteerd {
+  border-bottom: 6px solid rgb(255, 98, 221);
+}
+
+nav a:hover {
+  color: rgb(134, 134, 134);
+  background: rgb(23, 122, 40);
+}
+
+section {
+  padding: 2em;
+  min-height: 100vh;
+  padding-top: 3em;
+  box-sizing: border-box;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
